@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rlToHome"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_00bfbb_22dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_home">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/icon_zs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/color_FFFFFFFF"
+                android:textSize="45sp"
+                android:text="SprintRay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_FFFFFFFF"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="Pro Wash - Automated Washer Dryer"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_FFFFFFFF"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Firmware Version 1.0"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvForceDrain"
+            android:textColor="@color/color_FFFFFFFF"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:paddingVertical="20dp"
+            android:text="Force Drain"
+            android:background="@drawable/bg_00bfbb_22dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:id="@+id/tvTransferLiquid"
+            android:textColor="@color/color_FFFFFFFF"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:paddingVertical="20dp"
+            android:text="Transfer Liquid"
+            android:background="@drawable/bg_00bfbb_22dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+</RelativeLayout>

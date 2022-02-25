@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rlToSet"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bg_00bfbb_22dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_back"></ImageView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Force Drain"
+            android:textColor="@color/color_FFFFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="30dp"
+        android:gravity="center"
+        android:text="This feature allows you to drain the wash chamber if liquid remains in the chamber due to an interruption in the cycle. The liquid will drain into chamber 1,so ensure you have adequate space in the chamber before starting.Start Force Drain"
+        android:textColor="@color/color_FFFFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvStartForceDrain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_00bfbb_22dp"
+        android:gravity="center"
+        android:paddingVertical="20dp"
+        android:text="Start Force Drain"
+        android:textColor="@color/color_FFFFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+</RelativeLayout>

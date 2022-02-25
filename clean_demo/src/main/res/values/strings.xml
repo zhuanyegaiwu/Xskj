@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Xskj_Demo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="comm_toast">抱歉！功能未知待开发...</string>
+</resources>
