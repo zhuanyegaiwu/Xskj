@@ -1,42 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
 
-    <FrameLayout
-        android:background="@drawable/bg_c4c4c4_0dp"
+    <LinearLayout
+        android:gravity="left"
         android:layout_width="400dp"
-        android:layout_height="214dp">
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="390dp"
+            android:layout_height="1dp"
+            android:background="@color/color_C4C4C4"></View>
+    </LinearLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycleView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
-        </androidx.recyclerview.widget.RecyclerView>
+    <androidx.recyclerview.widget.RecyclerView
 
-    </FrameLayout>
+        android:id="@+id/recycleView"
+        android:layout_width="400dp"
+        android:layout_height="214dp"
+        android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
 
+    <LinearLayout
+        android:gravity="left"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="390dp"
+            android:layout_height="1dp"
+            android:background="@color/color_C4C4C4"></View>
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="14dp">
+
         <TextView
-            android:paddingVertical="14.5dp"
-            android:background="@drawable/bg_c4c4c4_0dp"
-            android:gravity="center"
-            android:textColor="@color/color_FFFFFFFF"
-            android:textSize="16sp"
-            android:text="Select"
-            android:layout_marginBottom="14dp"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
+            android:id="@+id/tvSelect"
             android:layout_width="200dp"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/color_000000"
+            android:gravity="center"
+            android:paddingVertical="14.5dp"
+            android:text="Select"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="16sp">
 
         </TextView>
     </RelativeLayout>

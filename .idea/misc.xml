@@ -31,10 +31,13 @@
         <entry key="..\:/Users/zpl/Desktop/zpl/Android Project/Xskj/clean_demo/src/main/res/layout/fragment_comm_ft.xml" value="0.2" />
         <entry key="..\:/Users/zpl/Desktop/zpl/Android Project/Xskj/clean_demo/src/main/res/layout/fragment_error.xml" value="0.13572719060523938" />
         <entry key="..\:/Users/zpl/Desktop/zpl/Android Project/Xskj/clean_demo/src/main/res/layout/fragment_first_time.xml" value="0.16531165311653118" />
-        <entry key="..\:/Users/zpl/Desktop/zpl/Android Project/Xskj/clean_demo/src/main/res/layout/fragment_language.xml" value="0.16531165311653118" />
+        <entry key="..\:/Users/zpl/Desktop/zpl/Android Project/Xskj/clean_demo/src/main/res/layout/fragment_language.xml" value="0.22" />
         <entry key="..\:/Users/zpl/Desktop/zpl/Android Project/Xskj/clean_demo/src/main/res/layout/fragment_splash.xml" value="0.12" />
         <entry key="..\:/Users/zpl/Desktop/zpl/Android Project/Xskj/clean_demo/src/main/res/layout/fragment_updating.xml" value="0.11833785004516711" />
         <entry key="..\:/Users/zpl/Desktop/zpl/Android Project/Xskj/clean_demo/src/main/res/layout/fragment_welcome.xml" value="0.11833785004516711" />
+        <entry key="..\:/Users/zpl/Desktop/zpl/Android Project/Xskj/clean_demo/src/main/res/layout/item_launguage_select_view.xml" value="0.16169828364950317" />
+        <entry key="..\:/Users/zpl/Desktop/zpl/Android Project/Xskj/clean_demo/src/main/res/layout/layout_dialog_language_continue.xml" value="0.19534778681120143" />
+        <entry key="..\:/Users/zpl/Desktop/zpl/Android Project/Xskj/clean_demo/src/main/res/layout/layout_dialog_report.xml" value="0.1506323396567299" />
       </map>
     </option>
   </component>

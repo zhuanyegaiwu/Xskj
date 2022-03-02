@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="533dp"
+    android:layout_height="wrap_content"
+    android:background="@color/color_FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        style="@style/TextCommStyleBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="69dp"
+        android:gravity="center"
+        android:text="Do you wish to set the language to English?"></TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="58dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="34dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCancle"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_c4c4c4_0dp"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:text="Cancel">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvConfirm"
+            style="@style/TextCommStyleWhite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@color/color_000000"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:text="Confirm">
+
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -3,7 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/welcomeFt">
+    app:startDestination="@id/splashFt">
+    <fragment
+        android:id="@+id/languageFt"
+        android:name="com.example.xskj.taurus.LanguageFt"
+        android:label="fragment_languageFt"
+        tools:layout="@layout/fragment_language" />
     <fragment
         android:id="@+id/welcomeFt"
         android:name="com.example.xskj.taurus.WelcomeFt"

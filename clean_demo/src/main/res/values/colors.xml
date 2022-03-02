@@ -10,8 +10,9 @@
 
     <color name="color_6C4747">#833A3737</color>
     <color name="color_FF9800">#FFFF9800</color>
-    <color name="color_FFFFFFFF">#FFFFFFFF</color>
+    <color name="color_FFFFFF">#FFFFFFFF</color>
     <color name="color_09AA09">#09AA09</color>
     <color name="color_000000">#000000</color>
-    <color name="color_c4c4c4">#c4c4c4</color>
+    <color name="color_C4C4C4">#c4c4c4</color>
+    <color name="shenhui">#000000</color>
 </resources>

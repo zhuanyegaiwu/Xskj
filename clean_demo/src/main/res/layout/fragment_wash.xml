@@ -13,7 +13,7 @@
         android:layout_centerInParent="true"
         android:layout_marginHorizontal="30dp"
         android:text="Wash canclled"
-        android:textColor="@color/color_FFFFFFFF"
+        android:textColor="@color/color_FFFFFF"
         android:textSize="34sp" />
 
     <TextView
@@ -25,7 +25,7 @@
         android:layout_marginTop="20dp"
         android:text="Pressing cancel at any point will trigger this action,If wash is cancelled during dry cycle, then drain again to make sure
 nothing is left in the chamber. "
-        android:textColor="@color/color_FFFFFFFF"
+        android:textColor="@color/color_FFFFFF"
         android:textSize="30sp" />
 
 </LinearLayout>

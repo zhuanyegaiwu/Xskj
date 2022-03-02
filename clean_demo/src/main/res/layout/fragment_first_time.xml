@@ -43,7 +43,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:textColor="@color/color_FFFFFFFF"
+            android:textColor="@color/color_FFFFFF"
             android:background="@color/color_000000"
             android:paddingHorizontal="60dp"
             android:paddingVertical="15dp"

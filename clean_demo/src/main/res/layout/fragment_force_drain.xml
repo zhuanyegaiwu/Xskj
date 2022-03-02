@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="Force Drain"
-            android:textColor="@color/color_FFFFFFFF"
+            android:textColor="@color/color_FFFFFF"
             android:textSize="30sp"
             android:textStyle="bold">
 
@@ -45,7 +45,7 @@
         android:layout_marginHorizontal="30dp"
         android:gravity="center"
         android:text="This feature allows you to drain the wash chamber if liquid remains in the chamber due to an interruption in the cycle. The liquid will drain into chamber 1,so ensure you have adequate space in the chamber before starting.Start Force Drain"
-        android:textColor="@color/color_FFFFFFFF"
+        android:textColor="@color/color_FFFFFF"
         android:textSize="25sp"
         android:textStyle="bold">
 
@@ -62,7 +62,7 @@
         android:gravity="center"
         android:paddingVertical="20dp"
         android:text="Start Force Drain"
-        android:textColor="@color/color_FFFFFFFF"
+        android:textColor="@color/color_FFFFFF"
         android:textSize="35sp"
         android:textStyle="bold">
 

@@ -49,7 +49,7 @@
             <TextView
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"
-                android:textColor="@color/color_FFFFFFFF"
+                android:textColor="@color/color_FFFFFF"
                 android:textSize="45sp"
                 android:text="SprintRay"
                 android:layout_width="wrap_content"
@@ -60,7 +60,7 @@
 
         <TextView
             android:layout_marginTop="10dp"
-            android:textColor="@color/color_FFFFFFFF"
+            android:textColor="@color/color_FFFFFF"
             android:gravity="center"
             android:textSize="25sp"
             android:text="Pro Wash - Automated Washer Dryer"
@@ -70,7 +70,7 @@
 
         <TextView
             android:layout_marginTop="10dp"
-            android:textColor="@color/color_FFFFFFFF"
+            android:textColor="@color/color_FFFFFF"
             android:gravity="center"
             android:textSize="20sp"
             android:text="Firmware Version 1.0"
@@ -89,7 +89,7 @@
 
         <TextView
             android:id="@+id/tvForceDrain"
-            android:textColor="@color/color_FFFFFFFF"
+            android:textColor="@color/color_FFFFFF"
             android:textSize="25sp"
             android:gravity="center"
             android:paddingVertical="20dp"
@@ -101,7 +101,7 @@
 
         <TextView
             android:id="@+id/tvTransferLiquid"
-            android:textColor="@color/color_FFFFFFFF"
+            android:textColor="@color/color_FFFFFF"
             android:gravity="center"
             android:textSize="25sp"
             android:layout_marginLeft="10dp"

@@ -26,7 +26,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:textColor="@color/color_FFFFFFFF"
+                android:textColor="@color/color_FFFFFF"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Transfer Liquid"
@@ -36,7 +36,7 @@
             </TextView>
 
             <TextView
-                android:textColor="@color/color_FFFFFFFF"
+                android:textColor="@color/color_FFFFFF"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Transfer liquid from 1 to 2."
@@ -75,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Transfer is about to start. "
-                android:textColor="@color/color_FFFFFFFF"
+                android:textColor="@color/color_FFFFFF"
 
                 android:textSize="18sp"
                 android:textStyle="bold">
@@ -86,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Make sure destination chamber is I fully drained and cleaned."
-                android:textColor="@color/color_FFFFFFFF"
+                android:textColor="@color/color_FFFFFF"
                 android:textSize="16sp">
 
             </TextView>
@@ -107,7 +107,7 @@
             android:gravity="center"
             android:background="@drawable/bg_00bfbb_22dp"
             android:paddingVertical="20dp"
-            android:textColor="@color/color_FFFFFFFF"
+            android:textColor="@color/color_FFFFFF"
             android:text="Cancel"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -122,7 +122,7 @@
             android:gravity="center"
             android:background="@drawable/bg_00bfbb_22dp"
             android:paddingVertical="20dp"
-            android:textColor="@color/color_FFFFFFFF"
+            android:textColor="@color/color_FFFFFF"
             android:text="Start"
             android:layout_weight="1"
             android:layout_width="0dp"

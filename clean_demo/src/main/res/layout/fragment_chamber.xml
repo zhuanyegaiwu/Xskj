@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Regardless 1"
-                android:textColor="@color/color_FFFFFFFF"
+                android:textColor="@color/color_FFFFFF"
                 android:textSize="14sp">
 
             </TextView>
@@ -33,7 +33,7 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:text="Okay"
-                android:textColor="@color/color_FFFFFFFF"
+                android:textColor="@color/color_FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold">
 
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Regardless 1"
-                android:textColor="@color/color_FFFFFFFF"
+                android:textColor="@color/color_FFFFFF"
                 android:textSize="14sp">
 
             </TextView>
@@ -78,7 +78,7 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:text="Refill"
-                android:textColor="@color/color_FFFFFFFF"
+                android:textColor="@color/color_FFFFFF"
                 android:textSize="20sp">
 
             </TextView>
@@ -115,7 +115,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Unable to detect liquid."
-                android:textColor="@color/color_FFFFFFFF"
+                android:textColor="@color/color_FFFFFF"
 
                 android:textSize="18sp"
                 android:textStyle="bold">
@@ -126,7 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Add at least 500mLor press'Start Anyway'only if using IPA 99%"
-                android:textColor="@color/color_FFFFFFFF"
+                android:textColor="@color/color_FFFFFF"
                 android:textSize="16sp">
 
             </TextView>
@@ -149,7 +149,7 @@
                 android:gravity="center"
                 android:background="@drawable/bg_00bfbb_22dp"
                 android:paddingVertical="20dp"
-                android:textColor="@color/color_FFFFFFFF"
+                android:textColor="@color/color_FFFFFF"
                 android:text="Cancel"
                 android:layout_weight="1"
                 android:layout_width="0dp"
@@ -163,7 +163,7 @@
                 android:gravity="center"
                 android:background="@drawable/bg_00bfbb_22dp"
                 android:paddingVertical="20dp"
-                android:textColor="@color/color_FFFFFFFF"
+                android:textColor="@color/color_FFFFFF"
                 android:text="Start"
                 android:layout_weight="1"
                 android:layout_width="0dp"

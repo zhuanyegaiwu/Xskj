@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="533dp"
+    android:layout_height="wrap_content"
+    android:background="@color/color_FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="37dp"
+        android:src="@mipmap/icon_ok"></ImageView>
+
+    <TextView
+        style="@style/TextCommStyleBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:text="Language successfuly set to English."></TextView>
+
+
+    <TextView
+        android:id="@+id/tvConfirm"
+        style="@style/TextCommStyleWhite"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="36dp"
+        android:background="@color/color_000000"
+        android:gravity="center"
+        android:paddingVertical="15dp"
+        android:text="Continue">
+    </TextView>
+
+</LinearLayout>
