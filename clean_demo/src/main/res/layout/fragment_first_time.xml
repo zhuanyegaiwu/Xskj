@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="69dp"
+        android:text="Thank you for choosing Sprintray’s Wash."
+        android:textSize="16sp"
+        android:textColor="@color/color_000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="And marketing text"
+        android:textSize="16sp"
+        android:textColor="@color/color_000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:gravity="center"
+        android:text="to introduce what is available and how awesome it is"
+        android:textSize="16sp"
+        android:textColor="@color/color_000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_marginBottom="57dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="@color/color_FFFFFFFF"
+            android:background="@color/color_000000"
+            android:paddingHorizontal="60dp"
+            android:paddingVertical="15dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="Start Setup"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+</LinearLayout>

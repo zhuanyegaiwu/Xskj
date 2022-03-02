@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/icon_error">
+
+    </ImageView>
+
+
+    <TextView
+        android:layout_marginTop="28dp"
+        android:maxWidth="456dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error loading system configuration files. Please try restarting the
+machine. If the problem persist, please contact our support."
+        android:textColor="@color/color_000000"
+        android:textSize="16sp">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="24dp"
+            android:text="Serial No.: 123-456-789-123"
+            android:textColor="@color/color_000000"
+            android:textSize="16sp">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="24dp"
+            android:text="Software Version: 22.01.33Beta"
+            android:textColor="@color/color_000000"
+            android:textSize="16sp"></TextView>
+    </RelativeLayout>
+</LinearLayout>

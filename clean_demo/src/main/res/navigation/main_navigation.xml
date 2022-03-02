@@ -3,7 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/homeFt">
+    app:startDestination="@id/welcomeFt">
+    <fragment
+        android:id="@+id/welcomeFt"
+        android:name="com.example.xskj.taurus.WelcomeFt"
+        android:label="fragment_welcomeFt"
+        tools:layout="@layout/fragment_welcome" />
+    <fragment
+        android:id="@+id/afterUpdateFt"
+        android:name="com.example.xskj.taurus.AfterUpdateFt"
+        android:label="fragment_after_update"
+        tools:layout="@layout/fragment_after_update" />
+    <fragment
+        android:id="@+id/updatingFt"
+        android:name="com.example.xskj.taurus.UpdatingFt"
+        android:label="fragment_error"
+        tools:layout="@layout/fragment_updating" />
+    <fragment
+        android:id="@+id/errorFt"
+        android:name="com.example.xskj.taurus.ErrorFt"
+        android:label="fragment_error"
+        tools:layout="@layout/fragment_error" />
+    <fragment
+        android:id="@+id/firstTimeFt"
+        android:name="com.example.xskj.taurus.FirstTimeFt"
+        android:label="fragment_first_time"
+        tools:layout="@layout/fragment_first_time" />
+    <fragment
+        android:id="@+id/splashFt"
+        android:name="com.example.xskj.taurus.SplashFt"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
     <fragment
         android:id="@+id/homeFt"
         android:name="com.example.xskj.fragment.HomeFt"

@@ -16,43 +16,51 @@ public:
 
     void PUL1_On(void)  //A桶电机1开启
     {
-        system("echo 1 > /sys/class/gpio/gpio46/value");//1
+       // system("echo 1 > /sys/class/gpio/gpio46/value");//1
+        system("echo 1 > /sys/class/gpio/gpio78/value");//1
     }
     void PUL1_OFF(void) //A桶电机1关闭
     {
-        system("echo 0 > /sys/class/gpio/gpio46/value");//1
+        //system("echo 0 > /sys/class/gpio/gpio46/value");//1
+        system("echo 0 > /sys/class/gpio/gpio78/value");//1
     }
 
 
     void PUL2_On(void)  //A桶电机2开启
     {
-        system("echo 1 > /sys/class/gpio/gpio49/value");//1
+       // system("echo 1 > /sys/class/gpio/gpio49/value");//1
+        system("echo 1 > /sys/class/gpio/gpio81/value");//1
     }
     void PUL2_OFF(void) //A桶电机2关闭
     {
-        system("echo 0 > /sys/class/gpio/gpio49/value");//1
+       // system("echo 0 > /sys/class/gpio/gpio49/value");//1
+        system("echo 0 > /sys/class/gpio/gpio81/value");//1
     }
 
 
 
     void PUL3_On(void)  //B桶电机1开启
     {
-        system("echo 1 > /sys/class/gpio/gpio50/value");//
+       // system("echo 1 > /sys/class/gpio/gpio50/value");//
+        system("echo 1 > /sys/class/gpio/gpio82/value");//
     }
     void PUL3_OFF(void) //B桶电机1关闭
     {
-        system("echo 0 > /sys/class/gpio/gpio50/value");//
+        //system("echo 0 > /sys/class/gpio/gpio50/value");//
+        system("echo 0 > /sys/class/gpio/gpio82/value");//
     }
 
 
 
     void PUL4_On(void)  //B桶电机2关闭
     {
-        system("echo 1 > /sys/class/gpio/gpio51/value");//
+        //system("echo 1 > /sys/class/gpio/gpio51/value");//
+        system("echo 1 > /sys/class/gpio/gpio83/value");//
     }
     void PUL4_OFF(void) //B桶电机2关闭
     {
-        system("echo 0 > /sys/class/gpio/gpio51/value");
+        //system("echo 0 > /sys/class/gpio/gpio51/value");
+        system("echo 0 > /sys/class/gpio/gpio83/value");
     }
 
 
