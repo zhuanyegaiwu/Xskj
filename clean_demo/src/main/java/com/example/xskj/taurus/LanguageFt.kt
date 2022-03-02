@@ -1,6 +1,6 @@
 package com.example.xskj.taurus
 
-
+import android.util.Log
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.RelativeLayout
@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.example.xskj.R
+import com.example.xskj.Tool
 import kotlinx.android.synthetic.main.fragment_language.*
-
 
 class LanguageFt : CommFT() {
 
@@ -32,8 +32,7 @@ class LanguageFt : CommFT() {
 
     override fun getViewId(): Int = R.layout.fragment_language
 
-    override fun initData() {
-    }
+    override fun initData() {}
 
     override fun initView() {
         LinearLayoutManager(mActivity).also {
@@ -86,8 +85,13 @@ class LanguageFt : CommFT() {
         lp.height = ViewGroup.LayoutParams.WRAP_CONTENT
         alertDialog.window?.setAttributes(lp)
         inflate.findViewById<TextView>(R.id.tvConfirm).setOnClickListener {
+            when(currentPosition){
+                0->Tool.setSystemLanguage("en")
+                4->Tool.setSystemLanguage("zh")
+                else->Tool.setSystemLanguage("ru")
+            }
             alertDialog.dismiss()
-            navControllerby.navigate(R.id.welcomeFt)
+            navControllerby.navigate(R.id.firstTimeFt)
         }
     }
 

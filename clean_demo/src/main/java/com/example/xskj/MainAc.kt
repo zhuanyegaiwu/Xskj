@@ -1,17 +1,21 @@
 package com.example.xskj
 
+import android.content.res.Resources
+import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.xskj.model.DataM
-import com.example.xskj.R
 import com.gyf.immersionbar.BarHide
 import com.gyf.immersionbar.ktx.immersionBar
 import com.ridemagic.operation.common.viewmodel.CommVM
+import java.util.*
 
 
 class MainAc : AppCompatActivity() {
     lateinit var commVm:CommVM
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -21,6 +25,7 @@ class MainAc : AppCompatActivity() {
             fullScreen(true)
         }
         searchData()
+
     }
 
 
@@ -43,4 +48,5 @@ class MainAc : AppCompatActivity() {
     fun sendSearchData(listener:SendDataListener){
         this.listener=listener
     }
+
 }

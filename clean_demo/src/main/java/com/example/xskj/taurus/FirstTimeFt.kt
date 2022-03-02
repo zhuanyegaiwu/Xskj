@@ -1,6 +1,7 @@
 package com.example.xskj.taurus
 
 import com.example.xskj.R
+import com.example.xskj.Tool
 
 class FirstTimeFt:CommFT() {
     override fun getTitleText(): String ="Welcome"
@@ -12,7 +13,7 @@ class FirstTimeFt:CommFT() {
     }
 
     override fun initView() {
-
+        //Tool.setSystemLanguage("en")
     }
 
     override fun initLisenter() {
