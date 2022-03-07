@@ -1,16 +1,12 @@
 package com.example.xskj
 
-import android.content.res.Resources
-import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.xskj.model.DataM
 import com.gyf.immersionbar.BarHide
 import com.gyf.immersionbar.ktx.immersionBar
 import com.ridemagic.operation.common.viewmodel.CommVM
-import java.util.*
 
 
 class MainAc : AppCompatActivity() {

@@ -1,18 +1,29 @@
 package com.example.xskj.taurus
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.chad.library.adapter.base.BaseQuickAdapter
+import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.example.xskj.MainAc
 import com.example.xskj.R
 import com.example.xskj.Tool
 import com.example.xskj.model.DataM
+import com.example.xskj.view.DisplayTool
+import kotlinx.android.synthetic.main.fragment_comm_ft.*
+import kotlinx.android.synthetic.main.fragment_language.*
 
 abstract class CommFT : Fragment() {
 
@@ -38,6 +49,7 @@ abstract class CommFT : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setTitleType(getTitleType())
         setTitleText(getTitleText())
         addView()
         getData()
@@ -45,17 +57,80 @@ abstract class CommFT : Fragment() {
         initView()
         initLisenter()
     }
+
+    open fun getTitleType(): Int {
+        return 0
+    }
+
+    private fun setTitleType(titleType: Int) {
+        val ivLeft = viewFt.findViewById<ImageView>(R.id.ivLeft)
+        val ivRight = viewFt.findViewById<ImageView>(R.id.ivRight)
+        when (titleType) {
+            0 -> {
+                ivLeft.visibility = View.INVISIBLE
+                ivRight.visibility = View.VISIBLE
+            }
+            1 -> {
+                ivLeft.visibility = View.VISIBLE
+                ivRight.visibility = View.VISIBLE
+            }
+            else -> {
+                ivLeft.visibility = View.INVISIBLE
+                ivRight.visibility = View.VISIBLE
+            }
+        }
+        ivLeft.setOnClickListener {
+            navControllerby.navigateUp()
+        }
+    }
+
     private fun setTitleText(title: String) {
         viewFt.findViewById<TextView>(R.id.tvCentre).text = title
     }
+
     abstract fun getTitleText(): String
     private fun addView() {
         val viewContent = layoutInflater.inflate(getViewId(), null)
         viewFt.findViewById<LinearLayout>(R.id.llContent).addView(viewContent)
-        viewFt.findViewById<RelativeLayout>(R.id.rlRight).setOnClickListener {
-            Tool.showToast("设置功能暂未开发，敬请期待")
+        viewFt.findViewById<ImageView>(R.id.ivRight).setOnClickListener {
+            showSetDialog()
         }
     }
+
+    private fun showSetDialog() {
+        val inflate = layoutInflater.inflate(R.layout.layout_dialog_set, null)
+        val alertDialog = AlertDialog.Builder(mActivity)
+            .setView(inflate)
+            .create()
+        alertDialog.show()
+        val lp = WindowManager.LayoutParams()
+        lp.copyFrom(alertDialog.window?.attributes)
+        lp.width = DisplayTool.dip2px(requireContext(), 500F)
+        lp.height = ViewGroup.LayoutParams.WRAP_CONTENT
+        alertDialog.window?.setAttributes(lp)
+        LinearLayoutManager(mActivity).also {
+            var models = mutableListOf("Diagnostics", "Send Feedback", "Language Selection")
+            var recycleView = inflate.findViewById<RecyclerView>(R.id.recycleView)
+            it.orientation = RecyclerView.VERTICAL
+            recycleView.layoutManager = it
+            val setAdapter = SetAdapter(models)
+            recycleView.adapter = setAdapter
+            val headerView = layoutInflater.inflate(R.layout.header_set_view, null)
+            headerView.findViewById<ImageView>(R.id.ivDelete).setOnClickListener {
+                alertDialog.dismiss()
+            }
+            setAdapter.addHeaderView(headerView, 0)
+            setAdapter.setOnItemClickListener { adapter, view, position ->
+                alertDialog.dismiss()
+                when (position) {
+                    0 -> navControllerby.navigate(R.id.diagnosticsFt)
+                    1 -> navControllerby.navigate(R.id.feedbackFt)
+                    2 -> navControllerby.navigate(R.id.languageFt)
+                }
+            }
+        }
+    }
+
     abstract fun getViewId(): Int
     open fun getData() {
         mActivity.sendSearchData(object : MainAc.SendDataListener {
@@ -67,7 +142,19 @@ abstract class CommFT : Fragment() {
             }
         })
     }
+
     abstract fun initData()
     abstract fun initView()
     abstract fun initLisenter()
+
+
+    inner class SetAdapter(models: MutableList<String>?) :
+        BaseQuickAdapter<String, BaseViewHolder>(R.layout.item_set_select_view, models) {
+        override fun convert(holder: BaseViewHolder, item: String) {
+            holder.setText(R.id.tvSet, item)
+            if (holder.layoutPosition == 3) {
+                holder.setGone(R.id.viewLine, true)
+            }
+        }
+    }
 }

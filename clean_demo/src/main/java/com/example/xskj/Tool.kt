@@ -11,7 +11,6 @@ import android.util.DisplayMetrics
 import android.util.Log
 import android.view.Gravity
 import android.widget.Toast
-import androidx.core.content.ContextCompat.getSystemService
 import java.lang.reflect.Method
 import java.util.*
 
@@ -39,7 +38,6 @@ object Tool {
         resources.updateConfiguration(config, dm)
         rebootApp()
     }
-
     /**
      * 设置语言  使用这种方式
      * 修改系统语言

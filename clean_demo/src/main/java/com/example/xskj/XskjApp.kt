@@ -16,8 +16,8 @@ class XskjApp :Application() {
 
     private fun initAutoSize() {
         AutoSizeConfig.getInstance().getUnitsManager()
-            .setSupportDP(false)
-            .setSupportSP(false)
+            .setSupportDP(true)
+            .setSupportSP(true)
             .setSupportSubunits(Subunits.MM);
     }
 }

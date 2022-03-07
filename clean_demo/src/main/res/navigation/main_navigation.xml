@@ -5,6 +5,16 @@
     android:id="@+id/main_navigation"
     app:startDestination="@id/splashFt">
     <fragment
+        android:id="@+id/feedbackFt"
+        android:name="com.example.xskj.taurus.FeedbackFt"
+        android:label="fragment_feedback"
+        tools:layout="@layout/fragment_feedback" />
+    <fragment
+        android:id="@+id/diagnosticsFt"
+        android:name="com.example.xskj.taurus.DiagnosticsFt"
+        android:label="fragment_diagnosticsFt"
+        tools:layout="@layout/fragment_diagnostics" />
+    <fragment
         android:id="@+id/languageFt"
         android:name="com.example.xskj.taurus.LanguageFt"
         android:label="fragment_languageFt"
