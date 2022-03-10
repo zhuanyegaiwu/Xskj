@@ -1,6 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
+    <TextView
+        style="@style/TextCommStyleBlack"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Please provide us with a brief description of what you are experiencing. "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        style="@style/TextCommStyleBlack"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a category *"
+        android:layout_marginLeft="33dp"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        app:layout_constraintStart_toStartOf="@id/textView1"
+        />
+
+        <View
+            android:id="@+id/viewBg"
+            android:background="@drawable/bg_000000_2dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/textView2"
+            app:layout_constraintStart_toStartOf="@id/textView1"
+            android:layout_width="425dp"
+            android:layout_height="48dp">
+
+        </View>
+
+    <TextView
+        android:gravity="center_vertical"
+        style="@style/TextCommStyleLight"
+        android:text="Choose a category that best describes your request"
+        android:id="@+id/tvContent"
+        android:layout_marginTop="19dp"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toStartOf="@id/viewBg"
+        android:layout_width="366dp"
+        android:layout_height="19dp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivOpenClose"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/icon_to_close"
+        app:layout_constraintStart_toEndOf="@id/tvContent"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_goneMarginTop="19dp">
+
+    </ImageView>
+
+    <TextView
+        app:layout_constraintStart_toStartOf="@id/viewBg"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/viewBg"
+        style="@style/TextCommStyleBlack"
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let us know more *" />
+
+
+    <EditText
+        android:paddingVertical="14dp"
+        android:paddingHorizontal="12dp"
+        android:gravity="top"
+        android:maxLength="300"
+        style="@style/TextCommStyleBlack"
+        android:id="@+id/etContent"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/textView9"
+        app:layout_constraintTop_toBottomOf="@id/textView9"
+        android:background="@drawable/bg_000000_2dp"
+        android:layout_width="425dp"
+        android:layout_height="93dp">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvSend"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="37dp"
+        style="@style/TextCommStyleWhite"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:background="@color/color_000000"
+        android:gravity="center"
+        android:text="Send"
+        app:layout_constraintTop_toBottomOf="@id/etContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,8 +34,11 @@ open class CommVM(conext: Application) : AndroidViewModel((conext)) {
                 Log.e("lzp", jniTool.sendToCString("哈哈"))
                 Log.e("lzp", jniTool.sendToCInt(1,2).toString())
                 Log.e("lzp", jniTool.sendToCIntArray(intArrayOf(2,123456)).toString())*/
-                jniTool.getLiquidSensor(2).toString()
-                jniTool.PUL1OFF().toString()
+                Log.e("test","logdayin")
+                delay(200L)
+                //jniTool.getLiquidSensor(2).toString()
+                //jniTool.PUL1OFF().toString()
+                Log.e("zpl",jniTool.getLiquidSensor(2).toString())
             }
         }
     }

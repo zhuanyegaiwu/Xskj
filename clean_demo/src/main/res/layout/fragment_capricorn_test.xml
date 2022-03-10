@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginBottom="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/button1"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/color_C4C4C4"
+            android:gravity="center"
+            android:text="A桶电机1开启"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/button2"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/color_C4C4C4"
+            android:gravity="center"
+            android:text="A桶电机1关闭"
+            app:layout_constraintStart_toEndOf="@id/button1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/button3"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/color_C4C4C4"
+            android:gravity="center"
+            android:text="A桶电机2开启"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button1" />
+
+        <TextView
+            android:id="@+id/button4"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/color_C4C4C4"
+            android:gravity="center"
+            android:text="A桶电机2关闭"
+            app:layout_constraintStart_toEndOf="@id/button3"
+            app:layout_constraintTop_toBottomOf="@id/button1" />
+
+        <TextView
+            android:id="@+id/button5"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/color_C4C4C4"
+            android:gravity="center"
+            android:text="B桶电机1开启"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button3" />
+
+        <TextView
+            android:id="@+id/button6"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/color_C4C4C4"
+            android:gravity="center"
+            android:text="B桶电机1关闭"
+            app:layout_constraintStart_toEndOf="@id/button5"
+            app:layout_constraintTop_toBottomOf="@id/button3" />
+
+
+        <TextView
+            android:id="@+id/button7"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/color_C4C4C4"
+            android:gravity="center"
+            android:text="B桶电机2开启"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button5" />
+
+        <TextView
+            android:id="@+id/button8"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/color_C4C4C4"
+            android:gravity="center"
+            android:text="B桶电机2关闭"
+            app:layout_constraintStart_toEndOf="@id/button7"
+            app:layout_constraintTop_toBottomOf="@id/button5" />
+
+        <TextView
+            android:id="@+id/button9"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/color_C4C4C4"
+            android:gravity="center"
+            android:text="下风扇风扇开启"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button7" />
+        <TextView
+            android:id="@+id/button10"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/color_C4C4C4"
+            android:gravity="center"
+            android:text="下风扇风扇关闭"
+            app:layout_constraintStart_toEndOf="@id/button9"
+            app:layout_constraintTop_toBottomOf="@id/button7" />
+
+        <TextView
+            android:layout_marginBottom="35dp"
+            android:id="@+id/button11"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/color_C4C4C4"
+            android:gravity="center"
+            android:text="上风扇风扇开启"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button9" />
+
+        <TextView
+            android:layout_marginBottom="35dp"
+            android:id="@+id/button12"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/color_C4C4C4"
+            android:gravity="center"
+            android:text="上风扇风扇关闭"
+            app:layout_constraintStart_toEndOf="@id/button11"
+            app:layout_constraintTop_toBottomOf="@id/button9" />
+
+
+        <EditText
+            style="@style/TextCommStyleBlack"
+            android:gravity="center"
+            android:id="@+id/et1"
+            android:inputType="number"
+            android:hint="请输入参数值"
+            android:background="@color/color_C4C4C4"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button11"
+            android:layout_width="350dp"
+            android:layout_height="50dp">
+
+        </EditText>
+        <TextView
+            android:layout_marginBottom="35dp"
+            android:id="@+id/button13"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/color_C4C4C4"
+            android:gravity="center"
+            android:text="获取液体传感器数值"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et1" />
+
+        <EditText
+            style="@style/TextCommStyleBlack"
+            android:gravity="center"
+            android:id="@+id/et2"
+            android:inputType="number"
+            android:hint="请输入参数值"
+            android:background="@color/color_C4C4C4"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            app:layout_constraintStart_toEndOf="@id/button13"
+            app:layout_constraintTop_toBottomOf="@id/button12"
+            android:layout_width="350dp"
+            android:layout_height="50dp">
+
+        </EditText>
+
+        <TextView
+            android:layout_marginBottom="35dp"
+            android:id="@+id/button14"
+            style="@style/TextCommStyleBlack"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/color_C4C4C4"
+            android:gravity="center"
+            android:text="获取门阀传感器数值"
+            app:layout_constraintStart_toEndOf="@id/button13"
+            app:layout_constraintTop_toBottomOf="@id/et2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

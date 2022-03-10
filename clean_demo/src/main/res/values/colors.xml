@@ -17,4 +17,8 @@
     <color name="shenhui">#000000</color>
     <color name="color_EFEFEF">#EFEFEF</color>
     <color name="color_E6E6E6">#E6E6E6</color>
+    <color name="color_66FFFFFF">#66FFFFFF</color>
+    <color name="color_F1F1F1">#F1F1F1</color>
+
+    <color name="color_33000000">#33000000</color>
 </resources>

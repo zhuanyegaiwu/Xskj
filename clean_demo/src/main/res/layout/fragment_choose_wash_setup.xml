@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <View
+        android:id="@+id/bgView1"
+        android:layout_marginLeft="49dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="44dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_33000000_f1f1f1_5dp"
+        android:layout_width="218dp"
+        android:layout_height="70dp">
+    </View>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_marginTop="51dp"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextTitleStyleBlack"
+        android:text="Recommended"
+        android:layout_marginLeft="118dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:text="Normal"
+        style="@style/TextCommStyleBlack"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        android:layout_marginLeft="82dp"
+        app:layout_constraintStart_toStartOf="@id/bgView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <View
+        android:id="@+id/bgView2"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintStart_toEndOf="@id/bgView1"
+        android:layout_marginTop="44dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_33000000_f1f1f1_5dp"
+        android:layout_width="218dp"
+        android:layout_height="70dp">
+    </View>
+
+    <TextView
+        android:text="Heavy"
+        style="@style/TextCommStyleBlack"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toTopOf="@id/bgView2"
+        android:layout_marginLeft="87dp"
+        app:layout_constraintStart_toStartOf="@id/bgView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <View
+        android:id="@+id/bgView3"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintStart_toEndOf="@id/bgView2"
+        android:layout_marginTop="44dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_33000000_f1f1f1_5dp"
+        android:layout_width="218dp"
+        android:layout_height="70dp">
+    </View>
+
+    <TextView
+        android:text="Quick Rinse"
+        style="@style/TextCommStyleBlack"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toTopOf="@id/bgView3"
+        android:layout_marginLeft="67dp"
+        app:layout_constraintStart_toStartOf="@id/bgView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <View
+        android:id="@+id/bgView4"
+        android:layout_marginLeft="170dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@id/bgView1"
+        android:background="@drawable/bg_33000000_f1f1f1_5dp"
+        android:layout_width="218dp"
+        android:layout_height="70dp">
+    </View>
+
+    <TextView
+        android:text="Custom Time"
+        style="@style/TextCommStyleBlack"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toTopOf="@id/bgView4"
+        android:layout_marginLeft="61dp"
+        app:layout_constraintStart_toStartOf="@id/bgView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <View
+        android:id="@+id/bgView5"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintStart_toEndOf="@id/bgView4"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@id/bgView1"
+        android:background="@drawable/bg_33000000_f1f1f1_5dp"
+        android:layout_width="218dp"
+        android:layout_height="70dp">
+    </View>
+
+    <TextView
+        android:text="Saved presets"
+        style="@style/TextCommStyleBlack"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toTopOf="@id/bgView5"
+        android:layout_marginLeft="56dp"
+        app:layout_constraintStart_toStartOf="@id/bgView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

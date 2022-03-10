@@ -2,15 +2,36 @@
 <resources>
     <style name="TextCommStyleBlack" parent="Widget.AppCompat.TextView">     <!--设置name 和parent-->
         <item name="android:textColor">@color/color_000000</item>     <!--字体颜色-->
-        <item name="android:textSize">16dp</item>      <!--字体大小-->
+        <item name="android:textSize">16sp</item>      <!--字体大小-->
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <style name="TextCommStyleBlackBig" parent="Widget.AppCompat.TextView">     <!--设置name 和parent-->
         <item name="android:textColor">@color/color_000000</item>     <!--字体颜色-->
-        <item name="android:textSize">24dp</item>      <!--字体大小-->
+        <item name="android:textSize">24sp</item>      <!--字体大小-->
+        <item name="android:includeFontPadding">false</item>
     </style>
     <style name="TextCommStyleWhite" parent="Widget.AppCompat.TextView">     <!--设置name 和parent-->
         <item name="android:textColor">@color/color_FFFFFF</item>     <!--字体颜色-->
-        <item name="android:textSize">16dp</item>      <!--字体大小-->
+        <item name="android:textSize">16sp</item>      <!--字体大小-->
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextCommStyleLight" parent="Widget.AppCompat.TextView">     <!--设置name 和parent-->
+        <item name="android:textColor">@color/color_66FFFFFF</item>     <!--字体颜色-->
+        <item name="android:textSize">16sp</item>      <!--字体大小-->
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextTitleStyleLight" parent="Widget.AppCompat.TextView">     <!--设置name 和parent-->
+        <item name="android:textColor">@color/color_33000000</item>     <!--字体颜色-->
+        <item name="android:textSize">12sp</item>      <!--字体大小-->
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextTitleStyleBlack" parent="Widget.AppCompat.TextView">     <!--设置name 和parent-->
+        <item name="android:textColor">@color/color_000000</item>     <!--字体颜色-->
+        <item name="android:textSize">12sp</item>      <!--字体大小-->
+        <item name="android:includeFontPadding">false</item>
     </style>
 </resources>

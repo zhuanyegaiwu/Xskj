@@ -36,6 +36,12 @@ abstract class CommFT : Fragment() {
             R.id.main_nav_host_fragment
         )
     }
+    val navControllerSprintRay by lazy {
+        Navigation.findNavController(
+            mActivity,
+            R.id.sprintray_nav_host_fragment
+        )
+    }
     private lateinit var viewFt: View
 
     override fun onCreateView(
@@ -63,24 +69,55 @@ abstract class CommFT : Fragment() {
     }
 
     private fun setTitleType(titleType: Int) {
+        val llIcon = viewFt.findViewById<LinearLayout>(R.id.llIcon)
         val ivLeft = viewFt.findViewById<ImageView>(R.id.ivLeft)
         val ivRight = viewFt.findViewById<ImageView>(R.id.ivRight)
         when (titleType) {
             0 -> {
                 ivLeft.visibility = View.INVISIBLE
                 ivRight.visibility = View.VISIBLE
+                llIcon.visibility=View.INVISIBLE
             }
             1 -> {
                 ivLeft.visibility = View.VISIBLE
                 ivRight.visibility = View.VISIBLE
+                llIcon.visibility=View.INVISIBLE
+            }
+            2 -> {
+                ivLeft.visibility = View.VISIBLE
+                ivRight.visibility = View.INVISIBLE
+                llIcon.visibility=View.INVISIBLE
+            }
+            3 -> {
+                ivLeft.visibility = View.VISIBLE
+                ivRight.visibility = View.VISIBLE
+                llIcon.visibility=View.VISIBLE
+            }
+            4 -> {
+                ivLeft.visibility = View.GONE
+                ivRight.visibility = View.GONE
+                llIcon.visibility=View.GONE
+            }
+            5 -> {
+                ivLeft.visibility = View.VISIBLE
+                ivRight.visibility = View.VISIBLE
+                llIcon.visibility=View.VISIBLE
+                ivPlatform.visibility=View.GONE
+                tvPlatform.visibility=View.GONE
+                ivBasket.visibility=View.VISIBLE
+                tvBasket.visibility=View.VISIBLE
             }
             else -> {
                 ivLeft.visibility = View.INVISIBLE
                 ivRight.visibility = View.VISIBLE
+                llIcon.visibility=View.INVISIBLE
             }
         }
         ivLeft.setOnClickListener {
             navControllerby.navigateUp()
+        }
+        ivRight.setOnClickListener {
+            showSetDialog()
         }
     }
 
@@ -92,9 +129,6 @@ abstract class CommFT : Fragment() {
     private fun addView() {
         val viewContent = layoutInflater.inflate(getViewId(), null)
         viewFt.findViewById<LinearLayout>(R.id.llContent).addView(viewContent)
-        viewFt.findViewById<ImageView>(R.id.ivRight).setOnClickListener {
-            showSetDialog()
-        }
     }
 
     private fun showSetDialog() {
@@ -109,7 +143,7 @@ abstract class CommFT : Fragment() {
         lp.height = ViewGroup.LayoutParams.WRAP_CONTENT
         alertDialog.window?.setAttributes(lp)
         LinearLayoutManager(mActivity).also {
-            var models = mutableListOf("Diagnostics", "Send Feedback", "Language Selection")
+            var models = mutableListOf("Users","Diagnostics", "Send Feedback", "Language Selection")
             var recycleView = inflate.findViewById<RecyclerView>(R.id.recycleView)
             it.orientation = RecyclerView.VERTICAL
             recycleView.layoutManager = it
@@ -123,9 +157,10 @@ abstract class CommFT : Fragment() {
             setAdapter.setOnItemClickListener { adapter, view, position ->
                 alertDialog.dismiss()
                 when (position) {
-                    0 -> navControllerby.navigate(R.id.diagnosticsFt)
-                    1 -> navControllerby.navigate(R.id.feedbackFt)
-                    2 -> navControllerby.navigate(R.id.languageFt)
+                    0 -> navControllerby.navigate(R.id.userlistFt)
+                    1 -> navControllerby.navigate(R.id.diagnosticsFt)
+                    2 -> navControllerby.navigate(R.id.feedbackFt)
+                    3 -> navControllerby.navigate(R.id.languageFt)
                 }
             }
         }
@@ -152,7 +187,7 @@ abstract class CommFT : Fragment() {
         BaseQuickAdapter<String, BaseViewHolder>(R.layout.item_set_select_view, models) {
         override fun convert(holder: BaseViewHolder, item: String) {
             holder.setText(R.id.tvSet, item)
-            if (holder.layoutPosition == 3) {
+            if (holder.layoutPosition == 4) {
                 holder.setGone(R.id.viewLine, true)
             }
         }

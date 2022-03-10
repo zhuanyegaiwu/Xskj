@@ -28,8 +28,7 @@
 
 
         <TextView
-            android:textSize="24sp"
-            android:textColor="@color/color_000000"
+            style="@style/TextCommStyleBlackBig"
             android:id="@+id/tvCentre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,6 +37,53 @@
         </TextView>
 
 
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/llIcon"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="532dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBasket"
+                android:src="@mipmap/icon_basket_unselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tvBasket"
+                style="@style/TextTitleStyleLight"
+                android:layout_marginLeft="8dp"
+                android:text="Basket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ivPlatform"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/icon_platform_unselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tvPlatform"
+                style="@style/TextTitleStyleLight"
+                android:layout_marginLeft="8dp"
+                android:text="Platform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
         <ImageView
             android:visibility="invisible"
             android:layout_alignParentRight="true"

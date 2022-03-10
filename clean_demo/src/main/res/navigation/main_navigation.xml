@@ -3,7 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/splashFt">
+    app:startDestination="@id/testFt">
+
+    <fragment
+        android:id="@+id/userlistFt"
+        android:name="com.example.xskj.taurus.profile.UserListFt"
+        android:label="fragment_userlistft"
+        tools:layout="@layout/fragment_user_list" />
+    <fragment
+        android:id="@+id/testFt"
+        android:name="com.example.xskj.TestFt"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_capricorn_test" />
+    <fragment
+        android:id="@+id/choosewashsetupFt"
+        android:name="com.example.xskj.taurus.landing.ChooseWashSetupFt"
+        android:label="fragment_choosewashsetup"
+        tools:layout="@layout/fragment_choose_wash_setup" />
+    <fragment
+        android:id="@+id/sprintrayFt"
+        android:name="com.example.xskj.taurus.landing.SprintRayFt"
+        android:label="fragment_sprintray"
+        tools:layout="@layout/fragment_sprintray" />
+    <fragment
+        android:id="@+id/termconditionsFt"
+        android:name="com.example.xskj.taurus.activate.TermConditionsFt"
+        android:label="fragment_termconditions"
+        tools:layout="@layout/fragemnt_term_conditions" />
+    <fragment
+        android:id="@+id/activatingFt"
+        android:name="com.example.xskj.taurus.activate.ActivatingFt"
+        android:label="fragment_activating"
+        tools:layout="@layout/fragemnt_activating" />
+    <fragment
+        android:id="@+id/activateFt"
+        android:name="com.example.xskj.taurus.activate.ActivateFt"
+        android:label="fragment_activate"
+        tools:layout="@layout/fragemnt_activate" />
     <fragment
         android:id="@+id/feedbackFt"
         android:name="com.example.xskj.taurus.FeedbackFt"

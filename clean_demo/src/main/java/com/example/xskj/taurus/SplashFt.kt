@@ -15,7 +15,7 @@ class SplashFt : CommFT() {
     }
 
     override fun initView() {
-        job = GlobalScope.launch(Dispatchers.Main) {
+        job = GlobalScope.launch(Dispatchers.Default) {
             while (true) {
                 delay(3000L)
                 navControllerby.navigate(R.id.languageFt)
@@ -29,8 +29,6 @@ class SplashFt : CommFT() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        job.let {
-            it.cancel()
-        }
+        job?.cancel()
     }
 }

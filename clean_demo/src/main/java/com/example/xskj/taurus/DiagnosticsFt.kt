@@ -58,7 +58,7 @@ class DiagnosticsFt : CommFT() {
     override fun initView() {
         tvNetworkName.text = getNetWorkState(requireContext())
         tvNetworkStrength.text = when (tvNetworkName.text) {
-            "4G","3G","2G" -> get4GOr5GSignalStrength(requireContext())
+            "4G", "3G", "2G" -> get4GOr5GSignalStrength(requireContext())
             "no network" -> "unknown"
             else -> getWifiSignalStrength(requireContext())
         }
@@ -139,11 +139,12 @@ class DiagnosticsFt : CommFT() {
     /**
      * 获取4G/3G/2G信号强度
      */
+    lateinit var MyPhoneListener: PhoneStateListener
     open fun get4GOr5GSignalStrength(context: Context): String {
         var bin: String = ""
         val telephonyManager =
             context.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
-        val MyPhoneListener: PhoneStateListener = object : PhoneStateListener() {
+        MyPhoneListener = object : PhoneStateListener() {
             override fun onSignalStrengthsChanged(signalStrength: SignalStrength) {
                 val signalinfo = signalStrength.toString()
                 val parts = signalinfo.split(" ").toTypedArray()
@@ -163,7 +164,7 @@ class DiagnosticsFt : CommFT() {
                     bin =
                         if (asu < 0 || asu >= 99) "No Network" else if (asu >= 16) "Excellent" else if (asu >= 6) "Common" else "Poor"
                 }
-                tvNetworkStrength.text=bin
+                tvNetworkStrength?.text = bin
                 super.onSignalStrengthsChanged(signalStrength)
             }
         }

@@ -42,12 +42,11 @@
         <TextView
             android:id="@+id/tvSelect"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:background="@color/color_000000"
             android:gravity="center"
-            android:paddingVertical="14.5dp"
             android:text="@string/select"
             android:textColor="@color/color_FFFFFF"
             android:textSize="16sp">

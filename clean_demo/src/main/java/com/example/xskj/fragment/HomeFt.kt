@@ -1,6 +1,5 @@
 package com.example.xskj.fragment
 
-import android.util.Log
 import android.widget.RelativeLayout
 import com.example.xskj.R
 import com.example.xskj.view.DisplayTool

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="62dp"
+        android:src="@mipmap/icon_ok"></ImageView>
+
+    <TextView
+        android:includeFontPadding="false"
+        style="@style/TextCommStyleBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="23dp"
+        android:gravity="center"
+        android:text="You have successfuly activated your washer."></TextView>
+
+
+    <TextView
+        android:includeFontPadding="false"
+        android:id="@+id/tvConfirm"
+        style="@style/TextCommStyleWhite"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="39dp"
+        android:background="@color/color_000000"
+        android:gravity="center"
+        android:text="Continue">
+    </TextView>
+
+</LinearLayout>

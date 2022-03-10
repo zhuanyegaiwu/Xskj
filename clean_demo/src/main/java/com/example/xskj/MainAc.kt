@@ -28,7 +28,7 @@ class MainAc : AppCompatActivity() {
     private fun searchData() {
         commVm = ViewModelProvider.AndroidViewModelFactory(application)
             .create(CommVM::class.java)
-        commVm.searchState()
+        //commVm.searchState()
         commVm.getSearchData().observe(this,{
             val dataM = it
             listener.let {

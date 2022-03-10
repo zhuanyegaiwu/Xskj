@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/sprintrayFt"
+    android:id="@+id/sprint_ray_navigation">
+    <fragment
+        android:id="@+id/sprintrayFt"
+        android:name="com.example.xskj.taurus.landing.StartWashNoReadyFt"
+        android:label="fragment_startwashnoreadyft"
+        tools:layout="@layout/fragment_start_wash_noready" />
+    <fragment
+        android:id="@+id/startwashrepalceiapFt"
+        android:name="com.example.xskj.taurus.landing.StartWashRepalceIFluidFt"
+        android:label="fragment_startwashrepalceiapft"
+        tools:layout="@layout/fragment_start_wash_replace_ipa" />
+    <fragment
+        android:id="@+id/startwashliquidlowFt"
+        android:name="com.example.xskj.taurus.landing.StartWashLiquidLowFt"
+        android:label="fragment_startwashliquidlowft"
+        tools:layout="@layout/fragment_start_wash_liquid_low" />
+</navigation>
