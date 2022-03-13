@@ -4,148 +4,157 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
     app:startDestination="@id/testFt">
-
+    <fragment
+        android:id="@+id/editUserFt"
+        android:name="com.example.demo.taurus.profile.EditUserFt"
+        android:label="fragment_edituserft"
+        tools:layout="@layout/fragment_edit_user" />
+    <fragment
+        android:id="@+id/userprofileFt"
+        android:name="com.example.demo.taurus.profile.UserProfileFt"
+        android:label="fragment_userprofileft"
+        tools:layout="@layout/fragment_user_profile" />
     <fragment
         android:id="@+id/userlistFt"
-        android:name="com.example.xskj.taurus.profile.UserListFt"
+        android:name="com.example.demo.taurus.profile.UserListFt"
         android:label="fragment_userlistft"
         tools:layout="@layout/fragment_user_list" />
     <fragment
         android:id="@+id/testFt"
-        android:name="com.example.xskj.TestFt"
+        android:name="com.example.demo.TestFt"
         android:label="fragment_test"
         tools:layout="@layout/fragment_capricorn_test" />
     <fragment
         android:id="@+id/choosewashsetupFt"
-        android:name="com.example.xskj.taurus.landing.ChooseWashSetupFt"
+        android:name="com.example.demo.taurus.landing.ChooseWashSetupFt"
         android:label="fragment_choosewashsetup"
         tools:layout="@layout/fragment_choose_wash_setup" />
     <fragment
         android:id="@+id/sprintrayFt"
-        android:name="com.example.xskj.taurus.landing.SprintRayFt"
+        android:name="com.example.demo.taurus.landing.SprintRayFt"
         android:label="fragment_sprintray"
         tools:layout="@layout/fragment_sprintray" />
     <fragment
         android:id="@+id/termconditionsFt"
-        android:name="com.example.xskj.taurus.activate.TermConditionsFt"
+        android:name="com.example.demo.taurus.activate.TermConditionsFt"
         android:label="fragment_termconditions"
         tools:layout="@layout/fragemnt_term_conditions" />
     <fragment
         android:id="@+id/activatingFt"
-        android:name="com.example.xskj.taurus.activate.ActivatingFt"
+        android:name="com.example.demo.taurus.activate.ActivatingFt"
         android:label="fragment_activating"
         tools:layout="@layout/fragemnt_activating" />
     <fragment
         android:id="@+id/activateFt"
-        android:name="com.example.xskj.taurus.activate.ActivateFt"
+        android:name="com.example.demo.taurus.activate.ActivateFt"
         android:label="fragment_activate"
         tools:layout="@layout/fragemnt_activate" />
     <fragment
         android:id="@+id/feedbackFt"
-        android:name="com.example.xskj.taurus.FeedbackFt"
+        android:name="com.example.demo.taurus.FeedbackFt"
         android:label="fragment_feedback"
         tools:layout="@layout/fragment_feedback" />
     <fragment
         android:id="@+id/diagnosticsFt"
-        android:name="com.example.xskj.taurus.DiagnosticsFt"
+        android:name="com.example.demo.taurus.DiagnosticsFt"
         android:label="fragment_diagnosticsFt"
         tools:layout="@layout/fragment_diagnostics" />
     <fragment
         android:id="@+id/languageFt"
-        android:name="com.example.xskj.taurus.LanguageFt"
+        android:name="com.example.demo.taurus.LanguageFt"
         android:label="fragment_languageFt"
         tools:layout="@layout/fragment_language" />
     <fragment
         android:id="@+id/welcomeFt"
-        android:name="com.example.xskj.taurus.WelcomeFt"
+        android:name="com.example.demo.taurus.WelcomeFt"
         android:label="fragment_welcomeFt"
         tools:layout="@layout/fragment_welcome" />
     <fragment
         android:id="@+id/afterUpdateFt"
-        android:name="com.example.xskj.taurus.AfterUpdateFt"
+        android:name="com.example.demo.taurus.AfterUpdateFt"
         android:label="fragment_after_update"
         tools:layout="@layout/fragment_after_update" />
     <fragment
         android:id="@+id/updatingFt"
-        android:name="com.example.xskj.taurus.UpdatingFt"
+        android:name="com.example.demo.taurus.UpdatingFt"
         android:label="fragment_error"
         tools:layout="@layout/fragment_updating" />
     <fragment
         android:id="@+id/errorFt"
-        android:name="com.example.xskj.taurus.ErrorFt"
+        android:name="com.example.demo.taurus.ErrorFt"
         android:label="fragment_error"
         tools:layout="@layout/fragment_error" />
     <fragment
         android:id="@+id/firstTimeFt"
-        android:name="com.example.xskj.taurus.FirstTimeFt"
+        android:name="com.example.demo.taurus.FirstTimeFt"
         android:label="fragment_first_time"
         tools:layout="@layout/fragment_first_time" />
     <fragment
         android:id="@+id/splashFt"
-        android:name="com.example.xskj.taurus.SplashFt"
+        android:name="com.example.demo.taurus.SplashFt"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" />
     <fragment
         android:id="@+id/homeFt"
-        android:name="com.example.xskj.fragment.HomeFt"
+        android:name="com.example.demo.fragment.HomeFt"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/setFt"
-        android:name="com.example.xskj.fragment.SetFt"
+        android:name="com.example.demo.fragment.SetFt"
         android:label="fragment_set"
         tools:layout="@layout/fragment_set" />
     <fragment
         android:id="@+id/canleFt"
-        android:name="com.example.xskj.fragment.CancleFt"
+        android:name="com.example.demo.fragment.CancleFt"
         android:label="fragment_cancle"
         tools:layout="@layout/fragment_cancle" />
     <fragment
         android:id="@+id/washFt"
-        android:name="com.example.xskj.fragment.WashFt"
+        android:name="com.example.demo.fragment.WashFt"
         android:label="fragment_wash"
         tools:layout="@layout/fragment_wash"></fragment>
 
     <fragment
         android:id="@+id/washCompleteFt"
-        android:name="com.example.xskj.fragment.WashCompleteFt"
+        android:name="com.example.demo.fragment.WashCompleteFt"
         android:label="fragment_wash_complete"
         tools:layout="@layout/fragment_wash_complete"></fragment>
 
     <fragment
         android:id="@+id/forceDrainFt"
-        android:name="com.example.xskj.fragment.ForceDrainFt"
+        android:name="com.example.demo.fragment.ForceDrainFt"
         android:label="fragment_force_drain"
         tools:layout="@layout/fragment_force_drain"></fragment>
     <fragment
         android:id="@+id/transferLiquidFt"
-        android:name="com.example.xskj.fragment.TransferLiquidFt"
+        android:name="com.example.demo.fragment.TransferLiquidFt"
         android:label="fragment_transfer_Liquid"
         tools:layout="@layout/fragment_transfer_liquid"></fragment>
     <fragment
         android:id="@+id/One2TwoFt"
-        android:name="com.example.xskj.fragment.One2TwoFt"
+        android:name="com.example.demo.fragment.One2TwoFt"
         android:label="fragment_One_2_Two"
         tools:layout="@layout/fragment_one_2_two"></fragment>
     <fragment
         android:id="@+id/Two2OneFt"
-        android:name="com.example.xskj.fragment.Two2OneFt"
+        android:name="com.example.demo.fragment.Two2OneFt"
         android:label="fragment_Two_2_One"
         tools:layout="@layout/fragment_two_2_one"></fragment>
     <fragment
         android:id="@+id/continueFt"
-        android:name="com.example.xskj.fragment.ContinueFt"
+        android:name="com.example.demo.fragment.ContinueFt"
         android:label="fragment_continue"
         tools:layout="@layout/fragment_continue"></fragment>
     <fragment
         android:id="@+id/startAnywayFt"
-        android:name="com.example.xskj.fragment.StartAnywayFt"
+        android:name="com.example.demo.fragment.StartAnywayFt"
         android:label="fragment_start_anyway"
         tools:layout="@layout/fragment_start_anyway"></fragment>
 
     <fragment
         android:id="@+id/chamberFt"
-        android:name="com.example.xskj.fragment.ChamberFt"
+        android:name="com.example.demo.fragment.ChamberFt"
         android:label="fragment_chamber"
         tools:layout="@layout/fragment_chamber"></fragment>
 

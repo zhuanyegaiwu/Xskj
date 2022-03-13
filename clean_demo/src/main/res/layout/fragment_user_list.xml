@@ -6,12 +6,29 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:overScrollMode="never"
+        android:layout_marginTop="7dp"
+        android:id="@+id/recycleView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="609dp"
-        android:layout_height="wrap_content">
+        android:layout_height="252dp">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recycleView"
+        style="@style/TextCommStyleWhite"
+        android:text="Add New"
+        android:gravity="center"
+        android:background="@color/color_000000"
+        android:layout_width="200dp"
+        android:layout_height="48dp">
+
+    </TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

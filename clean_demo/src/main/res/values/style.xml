@@ -34,4 +34,22 @@
         <item name="android:textSize">12sp</item>      <!--字体大小-->
         <item name="android:includeFontPadding">false</item>
     </style>
+
+    <style name="TextViewStyleCoomBlack" parent="Widget.AppCompat.TextView">     <!--设置name 和parent-->
+        <item name="android:textColor">@color/color_FFFFFF</item>     <!--字体颜色-->
+        <item name="android:textSize">16sp</item>      <!--字体大小-->
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:width">200dp</item>
+        <item name="height">48dp</item>
+
+    </style>
+
+    <style name="TextViewStyleCoomWhite" parent="Widget.AppCompat.TextView">     <!--设置name 和parent-->
+        <item name="android:textColor">@color/color_000000</item>     <!--字体颜色-->
+        <item name="android:textSize">16sp</item>      <!--字体大小-->
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+
+    </style>
 </resources>
