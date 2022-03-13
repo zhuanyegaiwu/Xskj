@@ -7,7 +7,7 @@
 std::shared_ptr<PwmController> pwmController;
 //测试一
 extern "C" JNIEXPORT jstring JNICALL
-Java_com_example_xskj_JniTool_stringFromJNI(
+Java_com_example_demo_JniTool_stringFromJNI(
         JNIEnv *env,
         jobject /* this */) {
     std::string hello = "Hello from Jni";
@@ -16,7 +16,7 @@ Java_com_example_xskj_JniTool_stringFromJNI(
 
 //测试二
 extern "C" JNIEXPORT jstring JNICALL
-Java_com_example_xskj_JniTool_helloFromJNI(
+Java_com_example_demo_JniTool_helloFromJNI(
         JNIEnv *env,
         jobject /* this */) {
     std::string hello = helloWorld();
@@ -25,7 +25,7 @@ Java_com_example_xskj_JniTool_helloFromJNI(
 
 //测试三 java -C  String
 extern "C" JNIEXPORT jstring JNICALL
-Java_com_example_xskj_JniTool_sendToCString(
+Java_com_example_demo_JniTool_sendToCString(
         JNIEnv *env,
         jobject /* this */,
         jstring data) {
@@ -42,7 +42,7 @@ Java_com_example_xskj_JniTool_sendToCString(
 
 //测试三 java -C  Int
 extern "C" JNIEXPORT jint JNICALL
-Java_com_example_xskj_JniTool_sendToCInt(
+Java_com_example_demo_JniTool_sendToCInt(
         JNIEnv *env,
         jobject /* this */,
         jint a,
@@ -52,7 +52,7 @@ Java_com_example_xskj_JniTool_sendToCInt(
 
 //测试三 java -C  Array
 extern "C" JNIEXPORT jint  JNICALL
-Java_com_example_xskj_JniTool_sendToCIntArray(
+Java_com_example_demo_JniTool_sendToCIntArray(
         JNIEnv *env,
         jobject /* this */,
         jintArray data) {
@@ -69,7 +69,7 @@ Java_com_example_xskj_JniTool_sendToCIntArray(
 
 //测试四 调用头文件
 extern "C" JNIEXPORT void  JNICALL
-Java_com_example_xskj_JniTool_sendNetWork(
+Java_com_example_demo_JniTool_sendNetWork(
         JNIEnv *env,
         jobject /* this */) {
     pwmController->PUL1_OFF();
@@ -77,7 +77,7 @@ Java_com_example_xskj_JniTool_sendNetWork(
 }
 //测试四 调用头文件
 extern "C" JNIEXPORT jint JNICALL
-Java_com_example_xskj_JniTool_sendResultInt(
+Java_com_example_demo_JniTool_sendResultInt(
         JNIEnv *env,
         jobject /* this */,
         jint data) {
@@ -85,64 +85,64 @@ Java_com_example_xskj_JniTool_sendResultInt(
 }
 
 //A桶电机1开启
-extern "C" JNIEXPORT void JNICALL
-Java_com_example_xskj_JniTool_PUL1On(
+extern "C" JNIEXPORT jint JNICALL
+Java_com_example_demo_JniTool_PUL1On(
         JNIEnv *env,
         jobject /* this */) {
-    pwmController->PUL1_On();
+    return pwmController->PUL1_On();
 }
 //A桶电机1关闭
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_xskj_JniTool_PUL1OFF(
+Java_com_example_demo_JniTool_PUL1OFF(
         JNIEnv *env,
         jobject /* this */) {
     pwmController->PUL1_OFF();
 }
 //A桶电机2开启
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_xskj_JniTool_PUL2On(
+Java_com_example_demo_JniTool_PUL2On(
         JNIEnv *env,
         jobject /* this */) {
     pwmController->PUL2_On();
 }
 //A桶电机2关闭
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_xskj_JniTool_PUL2OFF(
+Java_com_example_demo_JniTool_PUL2OFF(
         JNIEnv *env,
         jobject /* this */) {
     pwmController->PUL2_OFF();
 }
 //B桶电机1开启
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_xskj_JniTool_PUL3On(
+Java_com_example_demo_JniTool_PUL3On(
         JNIEnv *env,
         jobject /* this */) {
     pwmController->PUL3_On();
 }
 //B桶电机1关闭
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_xskj_JniTool_PUL3OFF(
+Java_com_example_demo_JniTool_PUL3OFF(
         JNIEnv *env,
         jobject /* this */) {
     pwmController->PUL3_OFF();
 }
 //B桶电机2打开
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_xskj_JniTool_PUL4On(
+Java_com_example_demo_JniTool_PUL4On(
         JNIEnv *env,
         jobject /* this */) {
     pwmController->PUL4_On();
 }
 //B桶电机2关闭
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_xskj_JniTool_PUL4OFF(
+Java_com_example_demo_JniTool_PUL4OFF(
         JNIEnv *env,
         jobject /* this */) {
     pwmController->PUL4_OFF();
 }
 //下风扇风扇开启 单位万
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_xskj_JniTool_PWM1On(
+Java_com_example_demo_JniTool_PWM1On(
         JNIEnv *env,
         jobject /* this */,
         jint data) {
@@ -150,14 +150,14 @@ Java_com_example_xskj_JniTool_PWM1On(
 }
 //下风扇风扇关闭 单位万
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_xskj_JniTool_PWM1OFF(
+Java_com_example_demo_JniTool_PWM1OFF(
         JNIEnv *env,
         jobject /* this */) {
     pwmController->PWM1_OFF();
 }
 //上风扇风扇开启 单位万
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_xskj_JniTool_PWM2On(
+Java_com_example_demo_JniTool_PWM2On(
         JNIEnv *env,
         jobject /* this */,
         jint data) {
@@ -165,7 +165,7 @@ Java_com_example_xskj_JniTool_PWM2On(
 }
 //上风扇风扇关闭 单位万
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_xskj_JniTool_PWM2OFF(
+Java_com_example_demo_JniTool_PWM2OFF(
         JNIEnv *env,
         jobject /* this */) {
     pwmController->PWM2_OFF();
@@ -173,7 +173,7 @@ Java_com_example_xskj_JniTool_PWM2OFF(
 
 //获取液体传感器数值   0 - 3 id
 extern "C" JNIEXPORT jint JNICALL
-Java_com_example_xskj_JniTool_getLiquidSensor(
+Java_com_example_demo_JniTool_getLiquidSensor(
         JNIEnv *env,
         jobject /* this */,
         jint data) {
@@ -182,7 +182,7 @@ Java_com_example_xskj_JniTool_getLiquidSensor(
 
 //获取门阀传感器数值  0 - 1
 extern "C" JNIEXPORT jint JNICALL
-Java_com_example_xskj_JniTool_getDoorSendor(
+Java_com_example_demo_JniTool_getDoorSendor(
         JNIEnv *env,
         jobject /* this */,
         jint data) {

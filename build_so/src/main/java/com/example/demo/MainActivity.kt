@@ -1,9 +1,9 @@
-package com.example.xskj
+package com.example.demo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.xskj.databinding.ActivityMainBinding
+import com.example.demo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

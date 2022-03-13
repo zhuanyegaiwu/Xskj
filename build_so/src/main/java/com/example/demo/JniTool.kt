@@ -1,4 +1,4 @@
-package com.example.xskj
+package com.example.demo
 
 class JniTool {
     //测试
