@@ -13,7 +13,7 @@ dependencyResolutionManagement {
         maven { url "https://jitpack.io" }
     }
 }
-rootProject.name = "Xskj_Demo"
-include ':clean_demo'
+rootProject.name = "Xskj"
+include ':capricornus'
 
 include ':build_so'

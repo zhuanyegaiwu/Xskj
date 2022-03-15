@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/testFt">
+    <fragment
+        android:id="@+id/editUserFt"
+        android:name="com.soonsolid.capricornus.taurus.profile.EditUserFt"
+        android:label="fragment_edituserft"
+        tools:layout="@layout/fragment_edit_user" />
+    <fragment
+        android:id="@+id/userprofileFt"
+        android:name="com.soonsolid.capricornus.taurus.profile.UserProfileFt"
+        android:label="fragment_userprofileft"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/userlistFt"
+        android:name="com.soonsolid.capricornus.taurus.profile.UserListFt"
+        android:label="fragment_userlistft"
+        tools:layout="@layout/fragment_user_list" />
+    <fragment
+        android:id="@+id/testFt"
+        android:name="com.soonsolid.capricornus.TestFt"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_capricorn_test" />
+    <fragment
+        android:id="@+id/choosewashsetupFt"
+        android:name="com.soonsolid.capricornus.taurus.landing.ChooseWashSetupFt"
+        android:label="fragment_choosewashsetup"
+        tools:layout="@layout/fragment_choose_wash_setup" />
+    <fragment
+        android:id="@+id/sprintrayFt"
+        android:name="com.soonsolid.capricornus.taurus.landing.SprintRayFt"
+        android:label="fragment_sprintray"
+        tools:layout="@layout/fragment_sprintray" />
+    <fragment
+        android:id="@+id/termconditionsFt"
+        android:name="com.soonsolid.capricornus.taurus.activate.TermConditionsFt"
+        android:label="fragment_termconditions"
+        tools:layout="@layout/fragemnt_term_conditions" />
+    <fragment
+        android:id="@+id/activatingFt"
+        android:name="com.soonsolid.capricornus.taurus.activate.ActivatingFt"
+        android:label="fragment_activating"
+        tools:layout="@layout/fragemnt_activating" />
+    <fragment
+        android:id="@+id/activateFt"
+        android:name="com.soonsolid.capricornus.taurus.activate.ActivateFt"
+        android:label="fragment_activate"
+        tools:layout="@layout/fragemnt_activate" />
+    <fragment
+        android:id="@+id/feedbackFt"
+        android:name="com.soonsolid.capricornus.taurus.FeedbackFt"
+        android:label="fragment_feedback"
+        tools:layout="@layout/fragment_feedback" />
+    <fragment
+        android:id="@+id/diagnosticsFt"
+        android:name="com.soonsolid.capricornus.taurus.DiagnosticsFt"
+        android:label="fragment_diagnosticsFt"
+        tools:layout="@layout/fragment_diagnostics" />
+    <fragment
+        android:id="@+id/languageFt"
+        android:name="com.soonsolid.capricornus.taurus.LanguageFt"
+        android:label="fragment_languageFt"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/welcomeFt"
+        android:name="com.soonsolid.capricornus.taurus.WelcomeFt"
+        android:label="fragment_welcomeFt"
+        tools:layout="@layout/fragment_welcome" />
+    <fragment
+        android:id="@+id/afterUpdateFt"
+        android:name="com.soonsolid.capricornus.taurus.AfterUpdateFt"
+        android:label="fragment_after_update"
+        tools:layout="@layout/fragment_after_update" />
+    <fragment
+        android:id="@+id/updatingFt"
+        android:name="com.soonsolid.capricornus.taurus.UpdatingFt"
+        android:label="fragment_error"
+        tools:layout="@layout/fragment_updating" />
+    <fragment
+        android:id="@+id/errorFt"
+        android:name="com.soonsolid.capricornus.taurus.ErrorFt"
+        android:label="fragment_error"
+        tools:layout="@layout/fragment_error" />
+    <fragment
+        android:id="@+id/firstTimeFt"
+        android:name="com.soonsolid.capricornus.taurus.FirstTimeFt"
+        android:label="fragment_first_time"
+        tools:layout="@layout/fragment_first_time" />
+    <fragment
+        android:id="@+id/splashFt"
+        android:name="com.soonsolid.capricornus.taurus.SplashFt"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+
+
+</navigation>
